@@ -1,6 +1,7 @@
 *{
-    margin: 0px;
-    padding: 0px;
+    margin: 0px; 
+    padding: ​0px​;   
+    box-sizing: ​border-box​;
 }
 
 body{
@@ -122,6 +123,7 @@ main section article i,
 }
 
 main section article i{
+    display: block;
     font-size: 16px;
     padding: 5px;
     width: 30px;
@@ -129,6 +131,9 @@ main section article i{
     border: 1px solid #39b54a;
     background-color: #FFF;
     border-radius: 50%;
+    position: absolute;
+    right: 20px;
+    top: -15px;
 }
 
 main section h3{
@@ -140,8 +145,24 @@ article div.main-article{
     border-top: 1px solid #ebebeb;
     padding: 15px;
 }
-
-@media (min-width: 361px){
+.conteiner-price{
+    display: flex;
+}
+.price {
+    width: 30%;
+}
+.discount{
+    width: 70%;
+}
+.products{
+    display: flex;
+    flex-direction: column;
+}
+.products article{
+    width: 100%;
+    justify-content: space-between;
+}
+@media (min-width: 425px){
     main section article .description{
         display: block;
     }
@@ -149,8 +170,34 @@ article div.main-article{
     main section article{
         box-shadow: 0px 0px 10px rgb(100, 100, 100);
     }
+    .products{
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .products article{
+        width: 45%;
+        
+    }
 }
-
 @media (min-width: 769px){
+    .products{
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .products article{
+        width: 20%;
+    }
 
+}
+.container-head{
+    display: flex;
+}
+.logo{
+    width: 50%;
+}
+.form{
+    display: flex;
+    
 }
