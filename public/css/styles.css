@@ -9,27 +9,68 @@ body{
     background-color: #ebebeb;
 }
 
-h3{
-    font-size: 24px;
-}
-
-p{
-    font-size: 12px;
-}
-div.top-header{
-    padding: 5%;
-}
-
+/* HEADER */
+/* LOGO, BUSCADOR y TITULO */
 header{
+    display: block;
     background-color: #EAC926;
-}
-
-header div.logo{
-    width: 50%;
-}
-
-header div.logo{
     padding: 10px;
+}
+
+.top-header{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .tituloheader {
+    flex: auto;
+}
+
+.tituloheader {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-weight: 400;
+    text-align: center;
+}
+
+.logo{
+    width: 35%;
+}
+
+.form{
+    display: block;
+    justify-content: start;
+    background-color: #FFF;
+    border: 1px solid #000;
+    outline: none;
+    color: #666;
+    padding: 2px;
+    text-decoration: none;
+}
+
+input {
+    border-width: 0;
+    border-style: none;
+    border-color: none;
+    border-image: none;
+}
+
+.submit{
+    background-color: #FFF;
+    color: #666;
+    text-align: center;
+    font-size: 1em;
+    margin-left: 5px;
+    border: none;
+    background: none;
+}
+
+/* NAVBAR */
+.navbar{
+    display: flex;
 }
 header nav{
     font-size: 12px;
@@ -40,28 +81,9 @@ header ul li{
 }
 
 header ul li a{
+    display: none;
     text-decoration: none;
     color: #000;
-}
-
-header .form .input{
-    background-color: #FFF;
-    border: 1px solid #000;
-    outline: none;
-    color: #666;
-    padding: 2px;
-}
-header .form .submit{
-    background-color: #FFF;
-    border: 1px solid #000;
-    color: #666;
-    width: 10%;
-}
-
-header div.top-header p{
-    width: 100%;
-    text-align: center;
-    margin-top: 10px;
 }
 
 div.burger-menu{
@@ -77,6 +99,10 @@ div.burger-menu i{
     margin: 10px 0px 20px 0px;
     padding: 10px;
     width: 40px;
+}
+
+h3{
+    font-size: 24px;
 }
 
 .price{
@@ -162,7 +188,32 @@ article div.main-article{
     width: 100%;
     justify-content: space-between;
 }
+
+/* Media Queries TABLETS */
+
 @media (min-width: 425px){
+
+    .header {
+        max-width: 100%;
+    }
+    .top-header {
+        flex-wrap: nowrap;
+    }
+    .tituloheader {
+        max-width: 30%;
+        font-size: 1em;
+        text-align: right;
+    }
+    .logo {
+        max-width: 20%;
+    }
+    .form {
+        max-width: 50%;
+    }
+    input {
+        width: 115px;
+    }
+
     main section article .description{
         display: block;
     }
@@ -179,8 +230,66 @@ article div.main-article{
         width: 45%;
         
     }
+    /*navbar*/
+    .navbar{
+        display: flex;
+    }
+    header nav{
+        font-size: 12px;
+    }
+    
+    header ul li{
+        list-style-type: none;
+    }
+    
+    header ul li a{
+        text-decoration: none;
+        color: #000;
+    }
+    
+    div.burger-menu{
+        display: none;
+        text-align: center;
+    }
+    
+    div.burger-menu i{
+        display: none;
+        background-color: #0044AA;
+        border-radius: 5px;
+        color: #FFF;
+        font-size: 20px;
+        height: 40px;
+        margin: 10px 0px 20px 0px;
+        padding: 10px;
+        width: 40px;
+    }
+    
+header ul li a{
+    text-decoration: none;
+    color: #000;
 }
+}
+
+/* Media Queries DESKTOP */
+
 @media (min-width: 769px){
+    .top-header {
+        flex-wrap: nowrap;
+    }
+    .tituloheader {
+        max-width: 300px;
+        font-size: 15px;
+        text-align: right;
+    }
+    .logo {
+        max-width: 25%;
+    }
+    .form {
+        width: 350px;
+    }
+    input {
+        width: 305px;
+    }
     .products{
         flex-direction: row;
         flex-wrap: wrap;
@@ -190,14 +299,4 @@ article div.main-article{
         width: 20%;
     }
 
-}
-.container-head{
-    display: flex;
-}
-.logo{
-    width: 50%;
-}
-.form{
-    display: flex;
-    
 }
