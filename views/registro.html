@@ -16,7 +16,7 @@
     <title>MercadoLiebre</title>
   </head>
   <body>
-    <form class="form">
+    <form action="/" class="form">
       <input type="text" class="campoForm" id="nomYap" name="nombre" placeholder="Nombre y Apellido" minlength="1"/><br />
       <input type="text" class="campoForm" id="usname" name="usname" placeholder="Nombre de usuario" minlength="1" /><br />
       <input type="email" class="campoForm" id="email" name="email" placeholder="E-mail" /><br />
@@ -31,21 +31,18 @@
       <input type="radio" id="perf" class="per" name="perfil" value="vendedor" /><br />
     </div>
       <label for="intereses">Intereses</label><br />
-      <input type="checkbox" id="electro" name="intereses" value="electro" />
-      <label for="electro">Electro</label><br />
-      <input type="checkbox" id="moda" name="intereses" value="moda" />
-      <label for="moda">Moda</label><br />
-      <input type="checkbox" id="hogar" name="intereses" value="hogar" />
-      <label for="hogar">Hogar</label><br />
-      <input
-        type="checkbox"
-        id="jugueteria"
-        name="intereses"
-        value="jugueteria"
-      />
-      <label for="jugueteria">Jugueteria</label><br />
-      <input type="checkbox" id="vida" name="intereses" value="vida" />
-      <label for="vida">Vida Sana</label><br />
+      <label for="electro" name="electro">Electro</label>
+      <input type="checkbox" id="electro" name="electro" value="electro" /><br />
+      <label for="moda" name="moda">Moda</label>
+      <input type="checkbox" id="moda" name="moda" value="moda" /><br />
+      <label for="hogar" name="hogar">Hogar</label><br />
+      <input type="checkbox" id="hogar" name="horgar" value="hogar" />
+      <label for="jugueteria" name="jugueteria">Jugueteria</label>
+      <input type="checkbox" id="jugueteria" name="jugueteria" value="jugueteria"/><br />
+      <label for="vida" name="vidaSana">Vida Sana</label>
+
+      <input type="checkbox" id="vida" name="vidaSana" value="vida" /><br />
+      <button type="submit">Crear</button>
     </form>
   </body>
 </html>

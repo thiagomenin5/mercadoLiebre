@@ -123,8 +123,11 @@ h3,
 .description{
     display: none;
     margin-top: 20px;
+    opacity: 0;
 }
-
+.description:hover{
+    opacity: 1;    
+}
 section.banner img{
     width: 100%;
 }
@@ -138,6 +141,10 @@ main section article{
     background-color: #fff;    
     margin: 10px 0px;
 }
+.main-article{
+    position: relative;
+
+}
 
 main section article img{
     width: 100%;
@@ -149,18 +156,18 @@ main section article i,
 }
 
 main section article i{
-    display: block;
     font-size: 16px;
     padding: 5px;
-    width: 30px;
-    height: 30px;
+    width: 20px;
+    height: 20px;
     border: 1px solid #39b54a;
     background-color: #FFF;
     border-radius: 50%;
     position: absolute;
-    right: 20px;
+    right: 35px;
     top: -15px;
 }
+
 
 main section h3{
     margin: 20px 0px;
